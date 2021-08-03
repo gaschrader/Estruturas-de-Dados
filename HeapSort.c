@@ -3,9 +3,6 @@
 #include <string.h>
 #define MAXTAM 21
 
-//Nome: Gabriel Schrader Vilas Boas
-//RA: 150981
-
 void swap(char *string1, char *string2) {
 	char temp[MAXTAM];
 	strcpy(temp, string1);
