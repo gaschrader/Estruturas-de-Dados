@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-//Nome: Gabriel Schrader Vilas Boas
-//RA: 150981
-
 void swap(int *vet1, int *vet2) {
     int temp;
     temp = *vet1;
