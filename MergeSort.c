@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-//Nome: Gabriel Schrader Vilas Boas
-//RA: 150981
-
-int contapares(int vet[], int ini, int meio, int fim, int K) {
+int Merge(int vet[], int ini, int meio, int fim, int K) {
 	int n1, n2, i, j, k, count;
 	n1 = meio - ini + 1;
 	n2 = fim - meio;
@@ -58,13 +55,13 @@ int contapares(int vet[], int ini, int meio, int fim, int K) {
 	return count;
 }
 
-int numpares(int vet[], int ini, int fim, int K) {
+int MergeSort(int vet[], int ini, int fim, int K) {
 	if (ini >= fim) {
 		return 0;
 	}
 	int meio, count;
 	meio = ini + (fim - ini) / 2;
-	count = numpares(vet, ini, meio, K) + numpares(vet, meio + 1, fim, K) + contapares(vet, ini, meio, fim, K);
+	count = Merge(vet, ini, meio, K) + Merge(vet, meio + 1, fim, K) + Merge(vet, ini, meio, fim, K);
 	return count;
 }
 
@@ -76,6 +73,6 @@ int main(void) {
 	for (i = 0; i < n; i++) {
 		scanf("%d", &vetor[i]);
 	}
-	printf("%d\n", numpares(vetor, 0, n - 1, K));
+	printf("%d\n", MergeSort(vetor, 0, n - 1, K));
 	return 0;
 }
