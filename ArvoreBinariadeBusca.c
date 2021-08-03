@@ -1,6 +1,3 @@
-//Nome: Gabriel Schrader Vilas Boas
-//RA: 150981
- 
 #include <stdio.h>
 #include <stdlib.h>
  
@@ -99,7 +96,7 @@ int main(void) {
         scanf("%d", &i);
         if (i >= 0) {
             Pont No = CriarNovoNo(i);
-            Arvore = Inserir(Arvore, No);             //primeira linha de entrada
+            Arvore = Inserir(Arvore, No);            
         } else {
             break;
         }
@@ -117,7 +114,7 @@ int main(void) {
                 Arvore = Inserir(Arvore, No);
             } else {
                 Remover(Arvore, j);
-            }                                              //segunda linha de entrada
+            }                                             
         } else {
             break;
         }
