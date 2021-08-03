@@ -1,6 +1,3 @@
-//Nome: Gabriel Schrader Vilas Boas
-//RA: 150981
-
 #include <stdio.h>
 #include <stdlib.h>
 
