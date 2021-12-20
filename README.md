@@ -1,2 +1,2 @@
-# Estruturas-de-Dados
-💻 Algoritmos trabalhados em Estruturas de Dados
+# Estruturas de Dados em C
+💻 Alguns dos algoritmos que implementei em Estruturas de Dados.
